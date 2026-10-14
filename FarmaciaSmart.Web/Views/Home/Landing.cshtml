@@ -1,0 +1,81 @@
+@{
+    ViewData["Title"] = "FarmaciaSmart";
+    Layout = "_LandingLayout";
+}
+
+<nav class="landing-navbar">
+    <a class="landing-brand" asp-controller="Home" asp-action="Index">
+        <span>&#128138;</span> FarmaciaSmart
+    </a>
+    <div class="landing-nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+    <div class="landing-nav-actions">
+        <a class="btn-landing-outline" asp-area="CustomerPortal" asp-controller="Account" asp-action="Login">Sign In</a>
+        <a class="btn-landing-primary" asp-area="CustomerPortal" asp-controller="Account" asp-action="Register">Register</a>
+    </div>
+</nav>
+
+<section class="landing-hero">
+    <div class="landing-hero-text">
+        <h1>Multi-branch pharmacy care, backed by pharmacist-reviewed AI.</h1>
+        <p>
+            FarmaciaSmart centralizes point-of-sale, inventory, and purchasing across every branch of
+            Farmacia San Antonio, and gives customers AI-assisted OTC and supplement suggestions that
+            a licensed pharmacist actually reviews &mdash; never automated guesswork.
+        </p>
+        <div class="landing-hero-ctas">
+            <a class="btn-landing-cta" asp-area="CustomerPortal" asp-controller="Account" asp-action="Register">Get Started as a Customer</a>
+            <a class="btn-landing-cta-alt" asp-controller="Account" asp-action="Login">Staff Sign In</a>
+        </div>
+    </div>
+    <div class="landing-hero-visual">&#128138;</div>
+</section>
+
+<div class="landing-trust-row">
+    <ul>
+        <li><span class="check">&#10003;</span> Multi-branch inventory &amp; POS</li>
+        <li><span class="check">&#10003;</span> Pharmacist-reviewed AI recommendations</li>
+        <li><span class="check">&#10003;</span> Pre-order online, pick up in-store</li>
+        <li><span class="check">&#10003;</span> Real-time low-stock &amp; expiry alerts</li>
+    </ul>
+</div>
+
+<section class="landing-services" id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+            <div class="landing-service-card">
+                <div class="icon">&#128722;</div>
+                <h5>Shop &amp; Pre-Order</h5>
+                <p>Browse in-stock products by branch, add them to your cart, and submit a pre-order for pickup &mdash; no payment needed online.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="landing-service-card">
+                <div class="icon">&#129502;</div>
+                <h5>AI Recommendations</h5>
+                <p>Describe a concern and get a preliminary OTC or supplement suggestion, clearly labeled until a licensed pharmacist reviews it.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="landing-service-card">
+                <div class="icon">&#127970;</div>
+                <h5>Multi-Branch Operations</h5>
+                <p>One centralized system for inventory, purchasing, and sales across every Farmacia San Antonio branch.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="landing-service-card">
+                <div class="icon">&#128202;</div>
+                <h5>Staff Tools</h5>
+                <p>POS, payroll, attendance, and analytics for the team &mdash; all in one place.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="landing-footer">
+    &copy; 2026 - FarmaciaSmart.Web - <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+</footer>
